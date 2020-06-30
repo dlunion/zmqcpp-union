@@ -1,15 +1,5 @@
-# zmqcpp-union
-* Merge all libzmq source code into one cpp/hpp file
 
-## Startup
 
-* Make zmq_u.cpp and zmq_u.hpp
-```bash
-python make_cpp_hpp.py
-```
-
-* cpp code
-```cpp
 #include "zmq_u.hpp"
 #include <string>
 #include <iostream>
@@ -31,10 +21,3 @@ int main()
 	}
 	return 0;
 }
-```
-
-
-## Reference
-* [libzmq](https://github.com/zeromq/libzmq)
-* [zguide-cn](https://github.com/anjuke/zguide-cn)
-* [cppzmq](https://github.com/zeromq/cppzmq)
