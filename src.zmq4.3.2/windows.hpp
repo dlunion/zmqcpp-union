@@ -27,6 +27,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+#ifdef _WIN32
 #ifndef __ZMQ_WINDOWS_HPP_INCLUDED__
 #define __ZMQ_WINDOWS_HPP_INCLUDED__
 
@@ -102,3 +103,4 @@ static inline int poll (struct pollfd *pfd, unsigned long nfds, int timeout)
 #define snprintf(buffer_, count_, format_, ...)                                \
     _snprintf_s (buffer_, count_, _TRUNCATE, format_, __VA_ARGS__)
 #endif
+#endif // #ifdef _WIN32
