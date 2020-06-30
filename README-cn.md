@@ -1,14 +1,17 @@
-# zmqcpp-union | [中文说明](README-cn.md)
-* Merge all libzmq source code into one cpp/hpp file
+# zmqcpp-union
+* 合并zmq所有源代码为一个cpp和hpp文件，便于使用
 
-## Startup
+## 开始使用
 
-* Make zmq_u.cpp and zmq_u.hpp
+* 生成 zmq_u.cpp 和 zmq_u.hpp
 ```bash
 python make_cpp_hpp.py
 ```
 
-* cpp code
+* 如果你使用新版本的zmq，依然可以使用make_cpp_hpp.py进行操作得到cpp和hpp
+* 如果使用新版zmq，你需要先通过cmake得到windows下和linux下platform.h文件，然后合并为一个platform.h放到src下面即可。具体可以参考[platform.h](src.zmq4.3.2/platform.hpp)
+* 生成的代码支持windows和linux系统
+* C++代码，你将可以使用[zmq.h](https://github.com/zeromq/libzmq)和[zmq.hpp](https://github.com/zeromq/cppzmq)的所有特性
 ```cpp
 #include "zmq_u.hpp"
 #include <string>
