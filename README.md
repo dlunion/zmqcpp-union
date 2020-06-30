@@ -5,7 +5,7 @@
 
 * Make zmq_u.cpp and zmq_u.hpp
 ```bash
-python make_cpp_hpp.py
+python make_cpp_hpp.py  # to generate zmq_u.cpp and zmq_u.hpp
 ```
 
 * cpp code
